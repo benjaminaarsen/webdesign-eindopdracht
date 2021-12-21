@@ -1,7 +1,7 @@
 <template>
     <div class="header">
         <div class="logo">
-                <img class="logoimg" src="../assets/logo.png">
+            <img class="logoimg" src="../assets/logo.png">
         </div>
         <div class="menu-button">
             <Icon icon="bx:bx-menu" width="30"/>
