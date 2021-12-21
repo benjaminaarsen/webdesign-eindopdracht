@@ -1,7 +1,10 @@
 <template>
     <div class="header">
         <div class="logo">
-              <img class="logoimg" src="../assets/logo.png">
+                <img class="logoimg" src="../assets/logo.png">
+                <Icon icon="bx:bx-menu" width="30"/>
+        </div>
+        <div class="sidebar-button">
         </div>
         <div class="headermenu">
             <div class="buttons">
@@ -25,9 +28,13 @@
 
 
 <script>
+import { Icon } from '@iconify/vue';
 
 export default {
     name: "Menu",
+    components: {
+        Icon
+    }
 }
 </script>
 
@@ -49,15 +56,20 @@ export default {
         display: flex;
         background-color: var(--primary-color);
         padding: 10px 0px;
-        /* justify-content: center; */
         }
         .logo {
             display: flex;
+            justify-content: center;
+            align-items: center;
 
         }
             .logoimg {
                 width: 90px;
                 }
+            svg[class*="iconify iconify--bx"] {
+                position: absolute;
+                visibility: hidden;
+            }
         .headermenu {
             display: flex;
             margin: 0px auto;
@@ -85,6 +97,33 @@ export default {
                         }
 
 @media screen and (max-width: 600px){
+    .header {
+        align-items: center;
+        justify-content: center;
+    }
+    .logo {
+        visibility: hidden;
+    }
+    //     .logoimg {
+    //         display: flex;
+    //         justify-content: center;
+    //         align-items: center;
+    //     }
+    svg[class*="iconify iconify--bx"] {
+        position: absolute;
+        visibility: visible;
+        color: var(--secondary-color);
+
+    }
+    svg[class*="iconify iconify--bx"]:hover {
+        cursor: pointer;
+    }
+    .headermenu {
+        visibility: hidden;
+        overflow: hidden;
+        width: 0px;
+        height: 0px;
+    }
 
     p {
         font-size: 15px;
