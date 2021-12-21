@@ -22,7 +22,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
     .card {
         color: var(--primary-color);
         display: flex;
