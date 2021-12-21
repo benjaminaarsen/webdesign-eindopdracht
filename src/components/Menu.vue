@@ -2,7 +2,9 @@
     <div class="header">
         <div class="logo">
                 <img class="logoimg" src="../assets/logo.png">
-                <Icon icon="bx:bx-menu" width="30"/>
+        </div>
+        <div class="menu-button">
+            <Icon icon="bx:bx-menu" width="30"/>
         </div>
         <div class="sidebar-button">
         </div>
@@ -66,10 +68,9 @@ export default {
             .logoimg {
                 width: 90px;
                 }
-            svg[class*="iconify iconify--bx"] {
-                position: absolute;
-                visibility: hidden;
-            }
+        svg[class*="iconify iconify--bx"] {
+            display:none;
+        }
         .headermenu {
             display: flex;
             margin: 0px auto;
@@ -84,8 +85,13 @@ export default {
                 .button {
                     display: flex;
                     text-decoration: none;
+                    align-items: center;
                     cursor: pointer;
-                    margin: 0px 20px;
+                    padding: 0px 20px;
+                    height: 100%;
+                }
+                .button:hover {
+                    background-color: var(--primary-color-shade);
                 }
                 .button:active {
                     color: red;
@@ -97,32 +103,30 @@ export default {
                         }
 
 @media screen and (max-width: 600px){
-    .header {
+
+    .logo {
+        display: none;
+    }
+    .menu-button {
+        display: flex;
         align-items: center;
         justify-content: center;
     }
-    .logo {
-        visibility: hidden;
-    }
-    //     .logoimg {
-    //         display: flex;
-    //         justify-content: center;
-    //         align-items: center;
-    //     }
     svg[class*="iconify iconify--bx"] {
-        position: absolute;
+        display: inline-block;
+        position: relative;
+        height: 100%;
         visibility: visible;
+        margin: 15px 20px;
         color: var(--secondary-color);
 
     }
-    svg[class*="iconify iconify--bx"]:hover {
+    .menu-button:hover {
         cursor: pointer;
+        background-color: var(--primary-color-shade);
     }
     .headermenu {
-        visibility: hidden;
-        overflow: hidden;
-        width: 0px;
-        height: 0px;
+        display: none;
     }
 
     p {

@@ -2,6 +2,7 @@
     <div class="hero-image">
        
         <div class="hero-text">
+            <img class="logoimg" src="../assets/logo.png">
             <h1>Burger House</h1>
             <p>Echte Amerikaanse burgers aan de deur</p>
         </div>
@@ -22,7 +23,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
     .hero-image {
         border-radius: 15px;
         display: flex;
@@ -51,6 +52,9 @@ export default {
         text-shadow: black 4px 4px 10px ;
 
     }
+        img {
+            display: none;
+        }
         h1 {
             font-size: 80px;
             margin: 0px 0px;
@@ -69,6 +73,15 @@ export default {
     }
 }
 @media screen and (max-width: 600px) {
+    .hero-image {
+        border-radius: 0px;
+    }
+    img {
+        visibility: visible;
+        display: inline-block;
+        width: 120px;
+        position: relative;
+    }
     h1 {
         font-size: 50px;
     }
