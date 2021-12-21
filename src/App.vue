@@ -1,5 +1,5 @@
 <template>
-  <!-- <SideBar /> -->
+  <SideBar/>
   <Menu />
   <router-view/>
 </template>

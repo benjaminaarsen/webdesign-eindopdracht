@@ -37,6 +37,7 @@ export default {
         align-items: center;
         justify-content: space-evenly;
         flex-direction: row;
+        z-index: -1;
     }
     .cards {
         width: 30vw;

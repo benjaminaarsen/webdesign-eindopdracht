@@ -3,10 +3,8 @@
         <div class="logo">
             <img class="logoimg" src="../assets/logo.png">
         </div>
-        <div class="menu-button">
+        <div class="menu-button" @click="toggleSideBar">
             <Icon icon="bx:bx-menu" width="30"/>
-        </div>
-        <div class="sidebar-button">
         </div>
         <div class="headermenu">
             <div class="buttons">
@@ -34,8 +32,23 @@ import { Icon } from '@iconify/vue';
 
 export default {
     name: "Menu",
+    sidebarToggled: false,
     components: {
         Icon
+    },
+    provide: {
+        width: "0px"
+    },
+    methods: {
+        toggleSideBar() {
+            sidebarToggled = !sidebarToggled;
+            if (sidebarToggled) {
+                this.width = "45vw";
+            }
+            else {
+                this.width = "0px";
+            }
+        }
     }
 }
 </script>
@@ -118,6 +131,7 @@ export default {
         height: 100%;
         visibility: visible;
         margin: 15px 20px;
+        z-index: 0;
         color: var(--secondary-color);
 
     }
