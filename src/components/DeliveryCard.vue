@@ -24,20 +24,21 @@ export default {
 
 <style scoped>
     .card {
-        color: var(--secondary-color);
+        color: var(--primary-color);
         display: flex;
         justify-content: center;
-        background-color: var(--primary-color);
+        background-color: var(--secondary-color);
         border-radius: 10px;
         height: 225px;
-        transition-duration: 100ms;
+        transition-duration: 300ms;
         box-shadow: 0 8px  rgba(0, 0, 0, 0.5);
-        margin-left: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
 
     }
     .card:hover {
         cursor: pointer;
-        background-color: var(--primary-color-shade);
+        background-color: var(--secondary-color-shade);
         transform: translateY(4px);
         box-shadow: 0 4px  rgba(0, 0, 0, 0.7);
     }
@@ -45,14 +46,29 @@ export default {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content:space-evenly;
+            justify-content:space-around;
             width: 200px;
         }
-            icon {
-                flex-grow: 1;
-            }
+
             h1 {
                 font-size: 30px;
                 margin: 40px 0px;
             }
+
+
+    @media screen and (max-width: 600px) {
+        .card {
+            height: 150px;
+        }
+        .card-content {
+            width: 130px;
+        }
+            h1 {
+                font-size: 20px;
+                margin: 20px 0px;
+            }
+        svg {
+            transform: scale(0.7);
+        }
+    }
 </style>    

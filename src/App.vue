@@ -26,5 +26,6 @@ body {
   --primary-color: #0d0a02;
   --primary-color-shade: #1a1405;
   --secondary-color: #fbb31c;
+  --secondary-color-shade: #d89d1d;
 }
 </style>

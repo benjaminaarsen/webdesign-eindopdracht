@@ -18,6 +18,19 @@ export default {
 
 <style lang="scss">
   .home {
-    margin: 0px 30px;
+    margin: 0px 100px;
+    transition-duration: 400ms;
+
+  }
+
+  @media screen and (max-width: 1200px){
+    .home {
+      margin: 0px 50px;
+    }
+  }
+  @media screen and (max-width: 600px){
+    .home {
+      margin: 0px 0px;
+    }
   }
 </style>
