@@ -84,6 +84,7 @@ export default {
                     p {
                             color: var(--secondary-color);
                             font-size: 20px;
+                            font-weight: 500;
                             margin: 0px 0px;
                         }
 

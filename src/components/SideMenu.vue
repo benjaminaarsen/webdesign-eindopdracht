@@ -46,7 +46,7 @@ export default {
     .container {
         z-index: 2;
         width: 70%;
-        position: absolute;
+        position: fixed;
         height: 100%;
         overflow: auto;
         margin: 0;
@@ -61,23 +61,24 @@ export default {
         .buttons {
             margin-top: 50px;
         }
-        a {
-            text-decoration: none;
-            text-align: left;
+            a {
+                text-decoration: none;
+                text-align: left;
 
-        }
-        p {
-            font-size: 30px;
-            color: var(--primary-color);
-            line-height: 30px;
-            margin: 0;
-            padding: 15px;
-            transition-duration: 200ms;
+            }
+                p {
+                    font-weight: 800;
+                    font-size: 30px;
+                    color: var(--primary-color);
+                    line-height: 30px;
+                    margin: 0;
+                    padding: 15px;
+                    transition-duration: 200ms;
 
-        }
-        p:hover {
-            background-color: var(--secondary-color-shade)
-        }
+                }
+                p:hover {
+                    background-color: var(--secondary-color-shade)
+                }
 
 @media screen and (min-width: 600px) {
     .container { 

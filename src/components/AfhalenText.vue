@@ -1,18 +1,17 @@
 <template>
     <div class="content">
         <div class="text">
-            <h2>Bezorgen</h2>
-            <p>Heeft u even geen tijd om lekker eten op tafel te zetten?
-                Dan hebben wij de perfecte oplossing voor u: wij komen 
-                de lekkerste burgers van Nederland bij u aan de deur brengen
-                op de door u gekozen tijd. Betalen kan veilig en snel met iDeal,
-                zodat u niet aan de deur hoeft te betalen. 
+            <h2>Afhalen</h2>
+            <p>Ook is het mogelijk om de bestelling bij ons af te halen.
+                Bestel het eten online en wij zullen het klaar hebben staan op
+                het door u gekozen tijdstip. Betalen kan online via iDeal, of bij ons
+                in de winkel.
             </p>
             <router-link to="/bestellen" class="button">
                 <span><Icon icon="ic:outline-restaurant-menu" />Bekijk het menu</span>
             </router-link>
         </div>
-        <img src="@/assets/burgers.jpg"/>
+        <img src="@/assets/Burger.png"/>
         
     </div>
 </template>
@@ -21,7 +20,7 @@
 <script>
 import { Icon } from '@iconify/vue'
 export default {
-    name: "BezorgenText",
+    name: "AfhalenText",
     components: {
         Icon
     }
@@ -31,15 +30,15 @@ export default {
 <style lang="scss" scoped>
     .content {
         display: flex;
-        padding: 100px 60px;
-        flex-direction: row;
-        background: var(--primary-color);
+        padding: 60px;
+        flex-direction: row-reverse;
+        background: var(--secondary-color);
         justify-content: space-evenly;
         align-items: center;
     }
         .text {
             text-align: left;
-            color: var(--secondary-color);
+            color: var(--primary-color);
             padding: 20px;
             width: 40vw;
 
@@ -55,14 +54,14 @@ export default {
             a {
                 padding: 10px 20px;
                 margin-bottom: 40px;
-                color: var(--primary-color);
-                background-color: var(--secondary-color);
+                color: var(--secondary-color);
+                background-color: var(--primary-color);
                 text-decoration: none;
                 border-radius: 10px;
 
             }
             a:hover {
-                background-color: var(--secondary-color-shade);
+                background-color: var(--primary-color-shade);
                 cursor: pointer;
             }
             svg {

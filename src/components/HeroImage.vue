@@ -52,7 +52,7 @@ export default {
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
-        text-shadow: black 4px 4px 10px ;
+        text-shadow: black 4px 4px 5px ;
 
     }
         img {

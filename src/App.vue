@@ -16,7 +16,7 @@ export default {
 </script>
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap');
   .main {
     position: relative;
     display:block;
@@ -38,7 +38,11 @@ export default {
   }
 #app {
   font-family: 'Cairo';
+  font-weight: 800;
   text-align: center;
+}
+p {
+  font-weight: 500;
 }
 body {
   margin: 0px 0px;

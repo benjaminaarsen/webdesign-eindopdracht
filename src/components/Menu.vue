@@ -99,7 +99,7 @@ export default {
     }
     .menu-button:hover {
         cursor: pointer;
-        background-color: var(--primary-color-shade);
+        // background-color: var(--primary-color-shade);
     }
 }
 </style>
