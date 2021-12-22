@@ -68,8 +68,13 @@ export default {
     .content {
         flex-direction: column;
     }
+        .text {
+            width: 60vw;
+            text-align: center;
+        }
     img {
-        margin-top: 40px;
+        margin-top: 20px;
+        width: 90vw;
     }
 }
 </style>

@@ -2,7 +2,7 @@
     <div class="hero-image">
         <div class="hero-text">
             <img class="logoimg" src="../assets/logo.png">
-            <h1>Burger House</h1>
+            <h1>Burgir House</h1>
             <p>Echte Amerikaanse burgers aan de deur</p>
         </div>
          <div class="cards">
