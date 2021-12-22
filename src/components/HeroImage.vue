@@ -1,6 +1,5 @@
 <template>
     <div class="hero-image">
-       
         <div class="hero-text">
             <img class="logoimg" src="../assets/logo.png">
             <h1>Burger House</h1>
@@ -25,6 +24,7 @@ export default {
 
 <style scoped lang="scss">
     .hero-image {
+        margin-bottom: 200px;
         z-index: 0;
         border-radius: 15px;
         display: flex;

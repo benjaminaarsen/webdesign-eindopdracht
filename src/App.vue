@@ -1,6 +1,9 @@
 <template>
-  <Menu />
-  <router-view/>
+  <div class="main">
+    <Menu />
+    <div class="header-curve" />
+    <router-view/>
+  </div>
 </template>
 
 <script>
@@ -14,6 +17,25 @@ export default {
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@800&display=swap');
 
+  .main {
+    position: relative;
+    display:block;
+    width: 100%;
+    overflow: hidden;
+  }
+  .header-curve {
+    width: 100%;
+    background: var(--primary-color);
+    height: 50vh;
+    top: -15vh;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    border-radius: 50%;
+    transform: scale(1.4);
+    position: absolute;
+    z-index: -1;
+  }
 #app {
   font-family: 'Cairo';
   text-align: center;

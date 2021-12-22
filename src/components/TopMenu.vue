@@ -22,7 +22,6 @@
             </div>
         </div>
     </div>
-    <div class="header-curve"/>
 </template>
 
 
@@ -38,20 +37,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-    .header-curve {
-        width: 100%;
-        background: var(--primary-color);
-        height: 50vh;
-        top: -15vh;
-        left: 0;
-        right: 0;
-        bottom: auto;
-        border-radius: 50%;
-        transform: scale(1.4);
-        position: fixed;
-        z-index: -1;
-    }
     .header {
+        position: relative;
+        width: 100%;
         display: flex;
         background-color: var(--primary-color);
         padding: 10px 0px;

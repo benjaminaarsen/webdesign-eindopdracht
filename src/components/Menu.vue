@@ -93,6 +93,7 @@ export default {
         height: 100%;
         visibility: visible;
         margin: 15px 20px;
+        filter: drop-shadow(4px 4px 1px black);
         color: var(--secondary-color);
 
     }
