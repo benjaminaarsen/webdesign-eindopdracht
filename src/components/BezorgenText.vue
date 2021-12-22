@@ -62,6 +62,14 @@ export default {
             }
         img {
             object-fit: contain;
-            width: 30vw;
+            height: 30vh;
         }
+@media screen and (max-width: 800px) {
+    .content {
+        flex-direction: column;
+    }
+    img {
+        margin-top: 40px;
+    }
+}
 </style>
