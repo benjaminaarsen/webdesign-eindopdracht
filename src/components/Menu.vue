@@ -1,120 +1,95 @@
 <template>
-    <div class="header">
-        <div class="logo">
-            <img class="logoimg" src="../assets/logo.png">
-        </div>
-        <div class="menu-button">
-            <Icon icon="bx:bx-menu" width="30"/>
-        </div>
-        <div class="sidebar-button">
-        </div>
-        <div class="headermenu">
-            <div class="buttons">
-                <router-link to="/" class="button">
-                    <p>Home</p>
-                </router-link>
-                <router-link to="/bestellen" class="button">
-                    <p>Bestellen</p>
-                </router-link>
-                <router-link to="/over-ons" class="button">
-                    <p>Over Ons</p>
-                </router-link>
-                <router-link to="/contact" class="button">
-                    <p>Contact</p>
-                </router-link>
-            </div>
-        </div>
+    <div class="menu-button" @click="handleButtonClick">
+        <Icon icon="bx:bx-menu" width="30"/>
     </div>
-    <div class="header-curve"/>
+    <SideMenu :slide="slide" @click="handleOverlayClick"/>
+    <Overlay :opacity="opacity" @click="handleOverlayClick"/>
+    <TopMenu />
 </template>
 
-
 <script>
-import { Icon } from '@iconify/vue';
-
+import TopMenu from './TopMenu.vue'
+import SideMenu from './SideMenu.vue'
+import Overlay from './Overlay.vue'
+import { Icon } from '@iconify/vue'
+import { ref } from 'vue'
 export default {
-    name: "Menu",
     components: {
-        Icon
+        TopMenu,
+        SideMenu,
+        Icon,
+        Overlay
+    },
+    mounted() {
+        window.addEventListener('resize', this.sizeListener)
+    },
+    setup() {
+        var showSideBar = false;
+        var opacity = ref(0)
+        const slide = ref("-450px")
+        const sizeListener = () => {
+            if (visualViewport.width > 600) {
+                showSideBar = false
+                slide.value = "-450px"
+                opacity.value = 0;
+            }
+           
+        }
+        
+        const handleButtonClick = () => {
+            showSideBar = !showSideBar
+            if (showSideBar) {
+                opacity.value = 0;
+                slide.value = "0px"
+                opacity.value = 0.5;
+            }
+            else {
+                slide.value = "-450px"
+                opacity.value = 0;
+            }
+        }
+
+        const handleOverlayClick = () => {
+            showSideBar = false
+            opacity.value = 0;
+            slide.value = "-450px"
+        }
+
+        return {
+            handleButtonClick,
+            handleOverlayClick,
+            sizeListener,
+            slide,
+            opacity
+        }
     }
 }
 </script>
 
-<style scoped lang="scss">
-    .header-curve {
-        width: 100%;
-        background: var(--primary-color);
-        height: 50vh;
-        top: -15vh;
-        left: 0;
-        right: 0;
-        bottom: auto;
-        border-radius: 50%;
-        transform: scale(1.4);
-        position: fixed;
-        z-index: -1;
-    }
-    .header {
-        display: flex;
-        background-color: var(--primary-color);
-        padding: 10px 0px;
-        }
-        .logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-        }
-            .logoimg {
-                width: 90px;
-                }
-        svg[class*="iconify iconify--bx"] {
-            display:none;
-        }
-        .headermenu {
-            display: flex;
-            margin: 0px auto;
-
-        }
-            .buttons {
-                display: flex;
-                margin-left: -90px;
-                align-items: center;
-                justify-content: space-between;
-            }
-                .button {
-                    display: flex;
-                    text-decoration: none;
-                    align-items: center;
-                    cursor: pointer;
-                    padding: 0px 20px;
-                    height: 100%;
-                }
-                .button:hover {
-                    background-color: var(--primary-color-shade);
-                }
-                .button:active {
-                    color: red;
-                }
-                    p {
-                            color: var(--secondary-color);
-                            font-size: 20px;
-                            margin: 0px 0px;
-                        }
-
-@media screen and (max-width: 600px){
-
-    .logo {
+<style lang="scss" scoped>
+    .menu-button {
         display: none;
+        z-index: 2;
+    }
+    TopMenu {
+        z-index: 0
+    }
+    SideMenu {
+        z-index: 1
+    }
+@media screen and (max-width: 600px){
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
     }
     .menu-button {
+        position: fixed;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
     }
     svg[class*="iconify iconify--bx"] {
-        display: inline-block;
-        position: relative;
         height: 100%;
         visibility: visible;
         margin: 15px 20px;
@@ -125,13 +100,5 @@ export default {
         cursor: pointer;
         background-color: var(--primary-color-shade);
     }
-    .headermenu {
-        display: none;
-    }
-
-    p {
-        font-size: 15px;
-    }
 }
-
 </style>

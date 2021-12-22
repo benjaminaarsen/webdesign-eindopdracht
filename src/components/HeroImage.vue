@@ -7,8 +7,8 @@
             <p>Echte Amerikaanse burgers aan de deur</p>
         </div>
          <div class="cards">
-            <delivery-card text="Bestellen" icontype="carbon-scooter" width="60"/>
-            <delivery-card text="Afhalen" icontype="fa-solid:shopping-bag" width="30"/>
+            <delivery-card text="Bestellen" icontype="carbon-scooter" :width="60"/>
+            <delivery-card text="Afhalen" icontype="fa-solid:shopping-bag" :width="30"/>
         </div>
     </div>
 </template>
@@ -25,6 +25,7 @@ export default {
 
 <style scoped lang="scss">
     .hero-image {
+        z-index: 0;
         border-radius: 15px;
         display: flex;
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),  rgba(0, 0, 0, 1)), url("../assets/main-image.jpg");
