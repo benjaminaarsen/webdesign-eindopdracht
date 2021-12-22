@@ -29,25 +29,25 @@
 
 <script>
 import { Icon } from '@iconify/vue';
-
+import SideBar from './SideBar.vue';
+import { provide, ref } from 'vue';
 export default {
     name: "Menu",
-    sidebarToggled: false,
+  
     components: {
-        Icon
+        Icon,
+        SideBar
     },
-    provide: {
-        width: "0px"
+    setup() {
+        const sideBarToggled = ref(false);
+        provide('sideBarToggled', sideBarToggled)
+        return {
+            sideBarToggled
+        }
     },
     methods: {
         toggleSideBar() {
-            sidebarToggled = !sidebarToggled;
-            if (sidebarToggled) {
-                this.width = "45vw";
-            }
-            else {
-                this.width = "0px";
-            }
+            this.sidebarToggled = !this.sidebarToggled;
         }
     }
 }

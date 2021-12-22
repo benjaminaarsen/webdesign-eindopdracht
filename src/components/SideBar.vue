@@ -17,22 +17,40 @@
 
 
 <script>
+import { inject } from 'vue'
 export default {
     name: "SideBar",
-    inject: ["width"],
+    setup() {
+        const sideBarToggled = inject('sideBarToggled')
+        console.log(sideBarToggled)
+        return {
+            sideBarToggled
+        }
+    },
     computed: {
         cssProps() {
             return {
-                '--container-width':  this.width
+                '--slide': this.sideBarToggledf
             }
+        },
+        sideBarToggledf: function () {
+            var slide;
+            if (this.sideBarToggled) {
+                slide = "0px"
+            }
+            else {
+                slide = "-150px"
+            }
+            console.log(slide)
+            return slide
         }
-    }
+    },
 }
 </script>
 
 <style lang="scss" scoped>
     .container {
-        width: var(--container-width);
+        width: 45%;
         z-index: 1;
         position: absolute;
         height: 100%;
@@ -41,8 +59,9 @@ export default {
         padding: 0;
         background-color: var(--primary-color);
         box-shadow: black 2px 2px 15px;
-        border-radius: 15px;
-        margin-left: -20px;
+        border-radius: 0px 15px 15px 0px;
+        transition-duration: 200ms;
+        transform: translateX(var(--slide));
     }
         p {
             color: var(--secondary-color);
@@ -53,4 +72,11 @@ export default {
         p:hover {
             background-color: var(--primary-color-shade)
         }
+@media screen and (min-width: 600px){
+    .container {
+        transition-duration: 200ms;
+        transform:translateX(-150px);
+        width: 0px;
+    }
+}
 </style>
