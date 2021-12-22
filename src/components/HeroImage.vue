@@ -24,7 +24,8 @@ export default {
 
 <style scoped lang="scss">
     .hero-image {
-        margin-bottom: 200px;
+        margin: 0 100px;
+        margin-bottom: 210px;
         z-index: 0;
         border-radius: 15px;
         display: flex;
@@ -38,6 +39,7 @@ export default {
         align-items: center;
         justify-content: space-evenly;
         flex-direction: row;
+        transition-duration: 200ms;
     }
     .cards {
         width: 30vw;
@@ -67,6 +69,8 @@ export default {
         }
 @media screen and (max-width: 1200px){
     .hero-image {
+        margin: 0 50px;
+        margin-bottom: 210px;
         flex-direction: column;
     }
     .hero-text {
@@ -75,6 +79,8 @@ export default {
 }
 @media screen and (max-width: 600px) {
     .hero-image {
+        margin: 0 0;
+        margin-bottom: 210px;
         border-radius: 0px;
     }
     img {
