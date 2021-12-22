@@ -53,7 +53,7 @@ export default {
         padding: 0;
         transform: translateX(var(--slide));
         background-color: var(--secondary-color);
-        border-radius: 0 15px 15px 0;
+        border-radius: 0 15px 0px 0;
         box-shadow: black 4px 4px 15px;
         transition-duration: 200ms;
 
