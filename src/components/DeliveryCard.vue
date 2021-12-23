@@ -1,10 +1,10 @@
 <template>
-    <div class="card">
+    <router-link to="/bestellen" class="card">
         <div class="card-content">
             <Icon :icon="this.icontype" :width="this.width" style="flex-grow: 1"/>
             <h1>{{ text }}</h1>
         </div>
-    </div>
+    </router-link>
 </template>
 
 <script>
@@ -34,6 +34,7 @@ export default {
         box-shadow: 0 8px  rgba(0, 0, 0, 0.5);
         margin-left: 15px;
         margin-right: 15px;
+        text-decoration: none;
 
     }
     .card:hover {

@@ -23,7 +23,7 @@ export default {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 25vh;
+        height: 30vh;
         position: relative;
         overflow: hidden;
     }
@@ -53,5 +53,9 @@ export default {
             width: 80px;
             margin-left: -25px;
         }
-        
+@media screen and (max-width: 600px){
+    h1 {
+            margin-left: 10vw;
+        }
+}
 </style>
