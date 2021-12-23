@@ -74,19 +74,21 @@ export default {
                     cursor: pointer;
                     padding: 0px 20px;
                     height: 100%;
+                    color: var(--secondary-color);
+
                 }
                 .button:hover {
                     background-color: var(--primary-color-shade);
                 }
-                .button:active {
-                    color: red;
-                }
                     p {
-                            color: var(--secondary-color);
                             font-size: 20px;
                             font-weight: 500;
                             margin: 0px 0px;
                         }
+                .router-link-exact-active {
+                    color: var(--accent-color);
+                    border-bottom: 2px solid var(--accent-color);
+                }
 
 @media screen and (max-width: 600px){
     .header {

@@ -53,5 +53,6 @@ body {
   --primary-color-shade: #1a1405;
   --secondary-color: #fbb31c;
   --secondary-color-shade: #d89d1d;
+  --accent-color: #e41a26;
 }
 </style>

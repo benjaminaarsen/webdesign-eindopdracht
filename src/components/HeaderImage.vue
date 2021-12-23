@@ -1,10 +1,8 @@
 <template>
-    <div class="bestellen">
-        <div class="header-image">
-            <h1>Burgir House</h1>
-            <div class="circle-holder">
-                <!-- <img class="logoimg" src="../assets/logo.png"> -->
-            </div>
+    <div class="header-image">
+        <h1>Burgir House</h1>
+        <div class="circle-holder">
+            <!-- <img class="logoimg" src="../assets/logo.png"> -->
         </div>
     </div>
 </template>
@@ -25,15 +23,16 @@ export default {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 30vh;
+        height: 25vh;
         position: relative;
+        overflow: hidden;
     }
     h1 {
             color: var(--secondary-color);
             z-index: 1;
             position: absolute;
             margin-top: 10vh;
-            margin-left: 10vw;
+            // margin-left: 10vw;
         }
     .circle-holder {
         display: flex;
