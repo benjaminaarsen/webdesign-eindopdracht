@@ -5,8 +5,8 @@
             <h3>Locatie</h3>
             <div class="text">
                 <p><strong>Burgir House</strong></p>
-                <p>Johan Huizingalaan 104</p>
-                <p>1065 JE Amsterdam</p>
+                <p>Johan Burgerlaan 104</p>
+                <p>1234 AB Burgerstad</p>
             </div>
         </div>
         <div class="col">
