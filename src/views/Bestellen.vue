@@ -20,7 +20,7 @@ export default {
         MenuButton
     },
     setup() {
-        const currentMenu = ref('burgers')
+        const currentMenu = ref('burger')
         const handleClick = (menu) => {
             currentMenu.value = menu;
         }
