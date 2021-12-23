@@ -77,6 +77,7 @@ export default {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        margin-bottom: 20px;
     }
     h3 {
         font-size: 30px;
@@ -91,4 +92,10 @@ export default {
         width: 32px;
         height: 32px;
     }
+
+@media screen and (max-width: 600px){
+    .container {
+        flex-direction: column;
+    }
+}
 </style>
