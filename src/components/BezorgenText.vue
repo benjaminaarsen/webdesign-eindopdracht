@@ -9,7 +9,7 @@
                 zodat u niet aan de deur hoeft te betalen. 
             </p>
             <router-link to="/bestellen" class="button">
-                <span><Icon icon="ic:outline-restaurant-menu" />Bekijk het menu</span>
+                <span><Icon icon="ic:outline-restaurant-menu" />Bestellen</span>
             </router-link>
         </div>
         <img src="@/assets/burgers.jpg"/>

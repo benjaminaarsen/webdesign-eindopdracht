@@ -8,7 +8,7 @@
                 in de winkel.
             </p>
             <router-link to="/bestellen" class="button">
-                <span><Icon icon="ic:outline-restaurant-menu" />Bekijk het menu</span>
+                <span><Icon icon="ic:outline-restaurant-menu" />Bestellen</span>
             </router-link>
         </div>
         <img src="@/assets/Burger.png"/>
