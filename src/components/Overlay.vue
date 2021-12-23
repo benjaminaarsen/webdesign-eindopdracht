@@ -9,7 +9,7 @@ export default {
         opacity: Number
     },
     setup(props) {
-        console.log(props.opacity)
+        // console.log(props.opacity)
         const cssProps = () => {
             if (props.opacity !== 0) {
                 return {
