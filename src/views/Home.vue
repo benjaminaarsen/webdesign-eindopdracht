@@ -3,6 +3,8 @@
     <HeroImage />
     <BezorgenText />
     <AfhalenText />
+    <OpeningsTijden />
+    <Footer />
   </div>
 </template>
 
@@ -11,12 +13,16 @@
 import HeroImage from '@/components/HeroImage.vue'
 import BezorgenText from '@/components/BezorgenText.vue'
 import AfhalenText from '@/components/AfhalenText.vue'
+import OpeningsTijden from '@/components/OpeningsTijden.vue'
+import Footer from '@/components/Footer.vue'
 export default {
   name: 'Home',
   components: {
     HeroImage,
     BezorgenText,
-    AfhalenText
+    AfhalenText,
+    OpeningsTijden,
+    Footer,
   }
 }
 </script>

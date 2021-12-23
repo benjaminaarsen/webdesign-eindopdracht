@@ -30,7 +30,7 @@ export default {
 <style lang="scss" scoped>
     .content {
         display: flex;
-        padding: 60px;
+        padding: 100px 60px;
         flex-direction: row-reverse;
         background: var(--secondary-color);
         justify-content: space-evenly;
