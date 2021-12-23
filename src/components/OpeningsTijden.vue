@@ -68,10 +68,6 @@ export default {
         flex-direction: row;
         justify-content: space-evenly;
     }
-
-    .text {
-        // margin: auto;
-    }
     .col {
         display: flex;
         flex-direction: column;

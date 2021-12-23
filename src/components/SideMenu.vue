@@ -13,7 +13,7 @@
             <router-link to="/contact" class="button">
                 <p>Contact</p>
             </router-link>
-            <!-- <span><Icon icon="fa-regular:window-close" /><p>Menu sluiten</p></span> -->
+            <div class="close-button"><p>Menu sluiten</p><Icon icon="ep:circle-close-filled" /></div>
         </div>
     </div>
 </template>
@@ -60,13 +60,14 @@ export default {
     }
         .buttons {
             margin-top: 50px;
+            text-align: left;
         }
             a {
                 text-decoration: none;
                 text-align: left;
 
             }
-                p {
+                a > p {
                     font-weight: 800;
                     font-size: 30px;
                     color: var(--primary-color);
@@ -79,7 +80,28 @@ export default {
                 p:hover {
                     background-color: var(--secondary-color-shade)
                 }
-
+            .close-button {
+                text-align: left;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+                .close-button > p {
+                    color: var(--primary-color);
+                    font-weight: 800;
+                    font-size: 30px;
+                    line-height: 30px;
+                    margin: 0;
+                    padding: 15px;
+                }
+            .close-button:hover {
+                background-color: var(--secondary-color-shade);
+                cursor: pointer;
+            }
+                svg {
+                    font-size: 20px;
+                    margin-top: 4px;
+                }
 @media screen and (min-width: 600px) {
     .container { 
         transition-duration: 200ms;
