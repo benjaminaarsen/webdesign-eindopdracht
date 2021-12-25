@@ -1,9 +1,8 @@
 <template>
+    <div class="bg" />
     <div class="header-image">
         <h1>Burgir House</h1>
-        <div class="circle-holder">
-            <!-- <img class="logoimg" src="../assets/logo.png"> -->
-        </div>
+        <div class="circle-holder" />
     </div>
 </template>
 
@@ -14,6 +13,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    .bg {
+        background: var(--primary-color);
+        width: 100vw;
+        height: 30vh;
+        position: absolute;
+        z-index: -2;
+    }
     .header-image {
         width: 100%;
         display: flex;
@@ -26,13 +32,14 @@ export default {
         height: 30vh;
         position: relative;
         overflow: hidden;
+        clip-path: ellipse(80% 100% at top center);
     }
     h1 {
             color: var(--secondary-color);
             z-index: 1;
             position: absolute;
             margin-top: 10vh;
-            // margin-left: 10vw;
+            margin-left: 10vw;
         }
     .circle-holder {
         display: flex;
@@ -49,10 +56,6 @@ export default {
         vertical-align: middle;
         filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.616));
     }
-        .logoimg {
-            width: 80px;
-            margin-left: -25px;
-        }
 @media screen and (max-width: 600px){
     h1 {
             margin-left: 10vw;

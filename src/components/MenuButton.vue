@@ -21,7 +21,8 @@ export default {
 </script>
 <style lang="scss" scoped>
         .button {
-            color: var(--primary-color);
+            margin: 20px 0;
+            color: var(--secondary-color);
             display: flex;
             text-align: center;
             display: flex;

@@ -1,11 +1,14 @@
 <template>
-    <div class="container">
+    <div class="header">
         <HeaderImage />
         <div class="menu">
             <MenuButton :class="{ active: this.currentMenu==='burger' }" text="Burgers" icon="mdi:hamburger" @click="handleClick('burger')" />
             <MenuButton :class="{ active: this.currentMenu==='bijgerechten' }" text="Bijgerechten" icon="whh:chicken" @click="handleClick('bijgerechten')" />
             <MenuButton :class="{ active: this.currentMenu==='drank' }" text="Drank" icon="fluent:drink-to-go-24-filled" @click="handleClick('drank')" />
         </div>
+    </div>
+    <div class="container">
+        
         <div class="products">
             <ProductCard />
         </div>
@@ -43,11 +46,15 @@ export default {
         transition-duration: 350ms;
 
     }
+        .header {
+            clip-path: ellipse(160% 100% at left top);
+            overflow: hidden;
+        }
     .menu {
-        background: var(--secondary-color);
+        background: var(--primary-color);
+        // color: var(--secondary-color);
         display: flex;
         align-items: center;
-        box-shadow: 0 0 10px black;
     }
     .products {
         padding: 40px;
