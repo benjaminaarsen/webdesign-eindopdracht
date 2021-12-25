@@ -61,7 +61,7 @@ export default {
 
 <style lang="scss" scoped>
     .container {
-        padding: 40px;
+        padding: 100px 0;
         background-color: var(--primary-color);
         color: var(--secondary-color);
         display: flex;
