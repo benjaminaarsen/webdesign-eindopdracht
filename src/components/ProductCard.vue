@@ -1,6 +1,8 @@
 <template>
     <div class="card">
-        <img :src="this.image" />
+        <div class="header">
+            <img :src="this.image" />
+        </div>
         <div class="text">
             <h2>{{ this.title }}</h2>
             <p>{{ this.desc }}</p>
@@ -36,6 +38,7 @@ export default {
         transition-duration: 200ms;
         display: flex;
         flex-direction: column;
+        position: relative;
         width: 200px;
         height: 270px;
         margin: 0 20px;
@@ -70,10 +73,35 @@ export default {
             h3 {
                 line-height: 10px;
             }
-        img {
-            object-fit:cover;
+        .header {
+            display: flex;
+            overflow: hidden;
+            justify-content: center;
             height: 120px;
-            float: top;
             border-radius: 5px;
+
         }
+            img {
+                object-fit: cover;
+                border-radius: 5px;
+                height: 100%;
+            }
+@media screen and (max-width: 700px) {
+    .card {
+        width: 160px;
+        height: 225px;
+        margin: 0 10px;
+        padding: 5px;
+    }
+        .text {
+            padding: 0 5px;
+        }
+        h2 {
+            font-size: 15px;
+            line-height: 5px;
+        }
+        p {
+            font-size: 8px; 
+        }
+}
 </style>

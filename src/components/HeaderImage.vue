@@ -46,7 +46,7 @@ export default {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        border-radius: 50%;
+        // border-radius: 50%;
         background-color: var(--primary-color);
         width: 25vw;
         transform: scale(3);
@@ -57,8 +57,12 @@ export default {
         filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.616));
     }
 @media screen and (max-width: 600px){
+    .header-image {
+        clip-path:fill-box;
+    }
     h1 {
-            margin-left: 10vw;
+            margin-left: 2vw;
+            font-size: 30px;
         }
 }
 </style>

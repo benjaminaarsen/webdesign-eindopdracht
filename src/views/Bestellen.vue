@@ -15,6 +15,9 @@
         <div class="products" v-if="this.currentMenu === 'bijgerechten'">
             <ProductCard v-for="bijgerecht in bijgerechten" :key="bijgerecht.id" :title="bijgerecht.title" :desc="bijgerecht.desc" :price="bijgerecht.price" :image="bijgerecht.image" />
         </div>
+        <div class="products" v-if="this.currentMenu === 'drank'">
+            <ProductCard v-for="drank in dranken" :key="drank.id" :title="drank.title" :desc="drank.desc" :price="drank.price" :image="drank.image" />
+        </div>
     </div>
 </template>
 
@@ -37,21 +40,21 @@ export default {
                 id: 0,
                 desc: "Burgir met krokant gepanneerde kipfilet, uitjes, wortelreepjes en mayonaise.",
                 price: "€4.60",
-                image: require('../assets/chickenburger.jpg')
+                image: require('@/assets/chickenburger.jpg')
             },
             {
                 title: "Beef Burgir",
                 id: 1,
                 desc: "Burgir met perfect gegaarde beef, bacon, sla, augurk en mosterd.", 
                 price: "€5.00",
-                image: require('../assets/beef burger.jpg')
+                image: require('@/assets/beef burger.jpg')
             },
             {
                 title: "Fish Burgir",
                 id: 2,
                 desc: "Burgir met gegrilde vis, samen met een heerlijke salade en gepekelde komkommers.",
                 price: "€5.50",
-                image: require('../assets/fish burger.jpeg')
+                image: require('@/assets/fish burger.jpeg')
             }
         ]
         const bijgerechten = [
@@ -61,6 +64,36 @@ export default {
                 desc: "Heerlijke friet van eigen aardappels",
                 price: "€2.00",
                 image: require("@/assets/patat.jpg")
+            },
+            {
+                title: "Chicken Wings",
+                id: "1",
+                desc: "Heerlijk gekruide kipvleugeltjes in BBQ saus.",
+                price: "€2.50",
+                image: require("@/assets/chickenwings.jpg")
+            },
+            {
+                title: "Aardappelschijfjes",
+                id: "2",
+                desc: "Aardappelschijfjes met lekkere kruiden en saus naar keuze.",
+                price: "€3.00",
+                image: require("@/assets/aardappelschijfjes.jpg")
+            }
+        ]
+        const dranken = [
+            {
+                title: "Cola 25cl",
+                id: "0",
+                desc: "Cola 25cl",
+                price: "€1.60",
+                image: require("@/assets/cola.png")
+            },
+            {
+                title: "Fanta 25cl",
+                id: "1",
+                desc: "Fanta 25cl",
+                price: "1.60",
+                image: require("@/assets/fanta.jpg")
             }
         ]
         const currentMenu = ref('burger')
@@ -71,7 +104,8 @@ export default {
             currentMenu, 
             handleClick,
             burgers,
-            bijgerechten
+            bijgerechten,
+            dranken
         }
     }
 }
@@ -115,13 +149,17 @@ export default {
     }
 }
 @media screen and (max-width: 600px) {
+    .header {
+        clip-path: none;
+    }
     .container {
         margin: 0;
         // transition-duration: 200ms;
     }
     .button {
-        padding: 20px 5px;
+        padding: 15px 5px;
         transition-duration: 200ms;
+        margin: 10px 0;
     }
 }
 </style>
