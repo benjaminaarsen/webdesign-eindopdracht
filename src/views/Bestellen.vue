@@ -115,7 +115,6 @@ export default {
     .container {
         margin: 0 80px;
         transition-duration: 350ms;
-
     }
         .header {
             clip-path: ellipse(160% 100% at left top);
@@ -149,6 +148,9 @@ export default {
     }
 }
 @media screen and (max-width: 600px) {
+    .products {
+        padding: 5px;
+    }
     .header {
         clip-path: none;
     }
