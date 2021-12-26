@@ -38,20 +38,23 @@ export default {
         flex-direction: column;
         width: 200px;
         height: 270px;
+        margin: 0 20px;
         background: whitesmoke;
         border-radius: 10px;
         padding: 10px;
         overflow: hidden;
-        justify-content: space-between;
+        // justify-content: space-between;
 
     }
         .text {
             padding: 0 15px;
+            flex-grow: 1;
         }
             h2 {
                 font-size: 20px;
                 line-height: 10px;
                 font-weight: 500;
+                vertical-align: top;
                 color: var(--primary-color);
 
             }
@@ -70,6 +73,7 @@ export default {
         img {
             object-fit:cover;
             height: 120px;
+            float: top;
             border-radius: 5px;
         }
 </style>

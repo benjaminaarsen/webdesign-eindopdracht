@@ -9,8 +9,11 @@
     </div>
     <div class="container">
         
-        <div class="products">
+        <div class="products" v-if="this.currentMenu === 'burger'">
             <ProductCard v-for="burger in burgers" :key="burger.id" :title="burger.title" :desc="burger.desc" :price="burger.price" :image="burger.image"/>
+        </div>
+        <div class="products" v-if="this.currentMenu === 'bijgerechten'">
+            <ProductCard v-for="bijgerecht in bijgerechten" :key="bijgerecht.id" :title="bijgerecht.title" :desc="bijgerecht.desc" :price="bijgerecht.price" :image="bijgerecht.image" />
         </div>
     </div>
 </template>
@@ -51,6 +54,15 @@ export default {
                 image: require('../assets/fish burger.jpeg')
             }
         ]
+        const bijgerechten = [
+            {
+                title: "Patat",
+                id: "0",
+                desc: "Heerlijke friet van eigen aardappels",
+                price: "€2.00",
+                image: require("@/assets/patat.jpg")
+            }
+        ]
         const currentMenu = ref('burger')
         const handleClick = (menu) => {
             currentMenu.value = menu;
@@ -58,7 +70,8 @@ export default {
         return {
             currentMenu, 
             handleClick,
-            burgers
+            burgers,
+            bijgerechten
         }
     }
 }
@@ -98,6 +111,7 @@ export default {
 @media screen and (max-width: 900px) {
     .products {
         grid-template-columns: 1fr 1fr;
+        padding: 20px;
     }
 }
 @media screen and (max-width: 600px) {
