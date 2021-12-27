@@ -94,6 +94,13 @@ export default {
                 desc: "Fanta 25cl",
                 price: "1.60",
                 image: require("@/assets/fanta.jpg")
+            },
+            {
+                title: "Cassis 25cl",
+                id: "2",
+                desc: "Cassis 25cl",
+                price: "1.60",
+                image: require("@/assets/cassis.png")
             }
         ]
         const currentMenu = ref('burger')
