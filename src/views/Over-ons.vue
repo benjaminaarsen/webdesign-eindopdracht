@@ -78,4 +78,9 @@ export default {
             text-align: center;
         }
 }
+@media screen and (max-width: 600px) {
+    .text {
+        padding: 10px 0;
+    }
+}
 </style>
