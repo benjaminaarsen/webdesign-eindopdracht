@@ -41,7 +41,6 @@ export default {
         position: relative;
         width: 200px;
         height: 270px;
-        margin: 0 20px;
         background: whitesmoke;
         border-radius: 10px;
         padding: 10px;
@@ -90,7 +89,6 @@ export default {
     .card {
         width: 160px;
         height: 225px;
-        margin: 0 10px;
         padding: 5px;
     }
         .text {

@@ -17,14 +17,18 @@
                 Andere locaties zullen natuurlijk ook in rekening genomen worden, reageer op onze twitter poll met uw locatie.
                 Dan kunnen wij beter inschatten waar we het hardst nodig zijn!
             </p>
-            <a href="https://twitter.com" target="_blank">Bezoek onze twitter pagina</a>
+            <a href="https://twitter.com" target="_blank"><Icon icon="akar-icons:twitter-fill" />Bezoek onze twitter pagina</a>
         </div>
     </div>
 </template>
 
 <script>
+import { Icon } from '@iconify/vue'
 export default {
-    name: "Over Ons"
+    name: "Over Ons",
+    components: {
+        Icon
+    }
 }
 </script>
 
@@ -56,6 +60,11 @@ export default {
                 background-color: var(--secondary-color);
                 border-radius: 10px;
             }
+                svg {
+                    vertical-align: middle;
+                    margin-bottom: 3px;
+                    margin-right: 4px;
+                }
             a:hover {
                 cursor: pointer;
                 background-color: var(--secondary-color-shade);

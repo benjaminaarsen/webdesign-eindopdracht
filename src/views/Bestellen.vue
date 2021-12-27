@@ -135,7 +135,7 @@ export default {
     .products {
         padding: 40px;
         display: grid;
-        row-gap: 40px;
+        gap: 40px;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
     .active {
