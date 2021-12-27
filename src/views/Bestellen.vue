@@ -155,8 +155,12 @@ export default {
     }
 }
 @media screen and (max-width: 600px) {
+    .menu {
+        justify-content: space-evenly;
+    }
     .products {
-        padding: 5px;
+        padding: 10px;
+        gap: 20px;
     }
     .header {
         clip-path: none;
