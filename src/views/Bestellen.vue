@@ -60,21 +60,21 @@ export default {
         const bijgerechten = [
             {
                 title: "Patat",
-                id: "0",
+                id: 0,
                 desc: "Heerlijke friet van eigen aardappels",
                 price: "€2.00",
                 image: require("@/assets/patat.jpg")
             },
             {
                 title: "Chicken Wings",
-                id: "1",
+                id: 1,
                 desc: "Heerlijk gekruide kipvleugeltjes in BBQ saus.",
                 price: "€2.50",
                 image: require("@/assets/chickenwings.jpg")
             },
             {
                 title: "Aardappelschijfjes",
-                id: "2",
+                id: 2,
                 desc: "Aardappelschijfjes met lekkere kruiden en saus naar keuze.",
                 price: "€3.00",
                 image: require("@/assets/aardappelschijfjes.jpg")
@@ -83,21 +83,21 @@ export default {
         const dranken = [
             {
                 title: "Cola 25cl",
-                id: "0",
+                id: 0,
                 desc: "Cola 25cl",
                 price: "€1.60",
                 image: require("@/assets/cola.png")
             },
             {
                 title: "Fanta 25cl",
-                id: "1",
+                id: 1,
                 desc: "Fanta 25cl",
                 price: "1.60",
                 image: require("@/assets/fanta.png")
             },
             {
                 title: "Cassis 25cl",
-                id: "2",
+                id: 2,
                 desc: "Cassis 25cl",
                 price: "1.60",
                 image: require("@/assets/cassis.png")
