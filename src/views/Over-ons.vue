@@ -39,13 +39,13 @@ export default {
 
 <style lang="scss" scoped>
     h1 {
-        color: var(--secondary-color);  
+        color: var(--primary-color);  
     }
     .over-ons {
-        background: var(--primary-color);
+        background: var(--secondary-color-shade);
     }
      .text {
-            color: var(--primary-color);
+            color: var(--secondary-color);
             display: grid;
             padding: 10px 50px;
             grid-template-columns: 1fr 1fr;
@@ -56,7 +56,7 @@ export default {
         }
         article {
             margin-bottom: 150px;
-            background-color: var(--secondary-color);
+            background-color: var(--primary-color);
             border-radius: 30px;
             padding: 10px 40px;
             justify-content: center;

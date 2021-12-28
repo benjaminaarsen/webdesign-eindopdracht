@@ -93,7 +93,7 @@ export default {
                 id: "1",
                 desc: "Fanta 25cl",
                 price: "1.60",
-                image: require("@/assets/fanta.jpg")
+                image: require("@/assets/fanta.png")
             },
             {
                 title: "Cassis 25cl",
