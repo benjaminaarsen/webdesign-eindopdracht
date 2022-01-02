@@ -21,7 +21,7 @@
             </article>
             <article>
                 <h3>U vraagt zich vast af: hoe komen we aan de naam Burgir House?. De volgende video verklaart alles:</h3>
-                <iframe width="535" height="300" src="https://www.youtube.com/embed/yjNcXPtNQdE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="535" height="300" src="https://www.youtube.com/embed/yjNcXPtNQdE" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
             </article>
         </div>
     </div>
