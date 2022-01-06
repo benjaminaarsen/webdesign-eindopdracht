@@ -16,9 +16,9 @@
                 <router-link to="/over-ons" class="button">
                     <p>Over Ons</p>
                 </router-link>
-                <router-link to="/contact" class="button">
+                <a href="#footer" class="button">
                     <p>Contact</p>
-                </router-link>
+                </a>
             </div>
         </div>
     </div>

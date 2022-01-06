@@ -49,6 +49,7 @@ body {
   background: var(--secondary-color)
 }
 :root {
+  scroll-behavior: smooth;
   --primary-color: #0d0a02;
   --primary-color-shade: #1a1405;
   --secondary-color: #fbb31c;

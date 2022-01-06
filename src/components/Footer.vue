@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container" id="footer">
         <div class="text">
             <p>Disclaimer: <br>Deze website is een project voor school, en is dus niet van een bedrijf. De adres- en contactgegevens moeten dus ook als puur fictief beschouwd worden.</p>
             <span><Icon icon="ant-design:mail-filled" />benjaminaarsen@outlook.com</span>
@@ -24,7 +24,7 @@ export default {
         padding: 20px;
     }
     .text {
-        margin-top: 250px;
+        margin-top: 150px;
     }
     p {
         text-align: center;
