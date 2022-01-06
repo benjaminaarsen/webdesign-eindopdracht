@@ -29,14 +29,14 @@ export default {
             padding: 5px 10px;
             width: fit-content;
             align-items: center; 
-        }
             span {
                 display: flex;
                 align-items: center;
-            }
                 svg {
                     margin-right: 5px;
                 }
+            }
+        }
         .button:hover {
             color: var(--accent-color);
             cursor: pointer;

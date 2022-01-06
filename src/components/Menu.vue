@@ -77,29 +77,27 @@ export default {
     SideMenu {
         z-index: 1
     }
-@media screen and (max-width: 600px){
-    .overlay {
-        position: absolute;
-        width: 100%;
-        height: 100%;
+    @media screen and (max-width: 600px){
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .menu-button {
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            svg {
+                height: 100%;
+                visibility: visible;
+                margin: 15px 20px;
+                filter: drop-shadow(0px 0px 3px black);
+                color: var(--secondary-color);
+            }
+        }
+        .menu-button:hover {
+            cursor: pointer;
+        }
     }
-    .menu-button {
-        position: fixed;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-    svg[class*="iconify iconify--bx"] {
-        height: 100%;
-        visibility: visible;
-        margin: 15px 20px;
-        filter: drop-shadow(0px 0px 3px black);
-        color: var(--secondary-color);
-
-    }
-    .menu-button:hover {
-        cursor: pointer;
-        // background-color: var(--primary-color-shade);
-    }
-}
 </style>

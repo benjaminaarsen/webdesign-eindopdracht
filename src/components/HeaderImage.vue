@@ -33,36 +33,34 @@ export default {
         position: relative;
         overflow: hidden;
         clip-path: ellipse(80% 100% at top center);
-    }
-    h1 {
+        h1 {
             color: var(--secondary-color);
             z-index: 1;
             position: absolute;
             margin-top: 10vh;
             margin-left: 10vw;
         }
-    .circle-holder {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        // border-radius: 50%;
-        background-color: var(--primary-color);
-        width: 25vw;
-        transform: scale(3);
-        rotate: 15deg;
-        // margin: 0 auto;
-        bottom: 0;
-        vertical-align: middle;
-        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.616));
+        .circle-holder {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--primary-color);
+            width: 25vw;
+            transform: scale(3);
+            rotate: 15deg;
+            bottom: 0;
+            vertical-align: middle;
+            filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.616));
+        }
     }
 @media screen and (max-width: 600px){
     .header-image {
         clip-path:fill-box;
-    }
-    h1 {
+        h1 {
             margin-left: 2vw;
             font-size: 30px;
         }
+    }
 }
 </style>

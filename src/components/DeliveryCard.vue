@@ -35,39 +35,36 @@ export default {
         margin-left: 15px;
         margin-right: 15px;
         text-decoration: none;
-
-    }
-    .card:hover {
-        cursor: pointer;
-        background-color: var(--secondary-color-shade);
-        transform: translateY(4px);
-        box-shadow: 0 4px  rgba(0, 0, 0, 0.7);
-    }
         .card-content {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content:space-around;
             width: 200px;
-        }
-
             h1 {
                 font-size: 30px;
                 margin: 40px 0px;
             }
-
+        }
+    }
+    .card:hover {
+        cursor: pointer;
+        background-color: var(--secondary-color-shade);
+        transform: translateY(4px);
+        box-shadow: 0 4px  rgba(0, 0, 0, 0.7);   
+    }
 
     @media screen and (max-width: 600px) {
         .card {
             height: 150px;
-        }
-        .card-content {
-            width: 130px;
-        }
-            h1 {
-                font-size: 20px;
-                margin: 20px 0px;
+            .card-content {
+                width: 130px;
+                h1 {
+                    font-size: 20px;
+                    margin: 20px 0px;
+                }
             }
+        }  
         svg {
             transform: scale(0.7);
         }

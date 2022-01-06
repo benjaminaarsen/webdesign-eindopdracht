@@ -22,22 +22,22 @@ export default {
         background-color: var(--primary-color);
         color: var(--secondary-color);
         padding: 20px;
-    }
-    .text {
-        margin-top: 150px;
-    }
-    p {
-        text-align: center;
-        font-size: 15px;
-    }
-    svg {
-        margin-right: 5px;
-        vertical-align: middle;
-        margin-bottom: 3px;
-    }
-    span {
-        color: white;
-        font-weight: 500;
-        padding: 10px 5px;
+        .text {
+            margin-top: 150px;
+            p {
+                text-align: center;
+                font-size: 15px;
+            }
+            span {
+                color: white;
+                font-weight: 500;
+                padding: 10px 5px;
+                svg {
+                    margin-right: 5px;
+                    vertical-align: middle;
+                    margin-bottom: 3px;
+                }
+            }
+        }
     }
 </style>

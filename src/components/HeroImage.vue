@@ -5,7 +5,7 @@
             <h1>Burgir House</h1>
             <p>Echte Amerikaanse burgers aan de deur</p>
         </div>
-         <div class="cards">
+        <div class="cards">
             <delivery-card text="Bestellen" icontype="carbon-scooter" :width="60"/>
             <delivery-card text="Afhalen" icontype="fa-solid:shopping-bag" :width="30"/>
         </div>
@@ -40,41 +40,40 @@ export default {
         justify-content: space-evenly;
         flex-direction: row;
         transition-duration: 200ms;
-    }
-    .cards {
-        width: 30vw;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
-    }
-    .hero-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-        text-shadow: black 4px 4px 5px ;
-
-    }
-        img {
-            display: none;
+        .cards {
+            width: 30vw;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
         }
-        h1 {
-            font-size: 80px;
-            margin: 0px 0px;
-            line-height: 110px;
+        .hero-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            text-shadow: black 4px 4px 5px ;
+            img {
+                display: none;
+            }
+            h1 {
+                font-size: 80px;
+                margin: 0px 0px;
+                line-height: 110px;
+            }
+            p {
+                margin: 0px 0px;
+                line-height: 40px;
+            }
         }
-        p {
-            margin: 0px 0px;
-            line-height: 40px;
-        }
+    }
 @media screen and (max-width: 1200px){
     .hero-image {
         margin: 0 50px;
         margin-bottom: 210px;
         flex-direction: column;
-    }
-    .hero-text {
-        align-items: center;
+        .hero-text {
+            align-items: center;
+        }
     }
 }
 @media screen and (max-width: 600px) {
