@@ -76,7 +76,7 @@ export default {
                 width: 50%;
                 color: var(--secondary-color);
                 padding: 10px 15px;
-                background-color: var(--primary-color);
+                background-color: var(--secondary-color);
                 border-radius: 10px;
             }
                 svg {
@@ -86,7 +86,7 @@ export default {
                 }
             a:hover {
                 cursor: pointer;
-                background-color: var(--primary-color-shade);
+                background-color: var(--secondary-color-shade);
             }
 @media screen and (max-width: 1200px) {
     .text {
