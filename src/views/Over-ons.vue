@@ -74,7 +74,7 @@ export default {
                 font-weight: 500;
                 text-decoration: none;
                 width: 50%;
-                color: var(--secondary-color);
+                color: var(--primary-color);
                 padding: 10px 15px;
                 background-color: var(--secondary-color);
                 border-radius: 10px;
