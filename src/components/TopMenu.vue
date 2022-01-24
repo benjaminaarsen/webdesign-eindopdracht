@@ -16,7 +16,7 @@
                 <router-link to="/over-ons" class="button">
                     <p>Over Ons</p>
                 </router-link>
-                <a href="#footer" class="button">
+                <a v-if="$route.name === 'Home'" href="#footer" class="button">
                     <p>Contact</p>
                 </a>
             </div>
@@ -27,7 +27,8 @@
 
 <script>
 import { Icon } from '@iconify/vue';
-
+import {useRoute} from 'vue-router'
+import {ref} from 'vue'
 export default {
     name: "Menu",
     components: {
