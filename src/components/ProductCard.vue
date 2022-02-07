@@ -1,7 +1,7 @@
 <template>
     <div class="card">
         <div class="header">
-            <img :src="this.image" />
+            <img :src="this.image" /> 
         </div>
         <div class="text">
             <h2>{{ this.title }}</h2>
@@ -18,10 +18,10 @@
 export default {
     name: 'ProductCard',
     props: {
-        title: String,
-        desc: String,
-        price: String,
-        image: String
+        title: String, //product titel
+        desc: String, //product beschrijving
+        price: String, //product prijs
+        image: String //path van foto van het product
     },
 }
 </script>

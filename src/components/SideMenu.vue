@@ -30,7 +30,7 @@ export default {
         slide: String
     },
     setup(props) {
-        const cssProps = () => {
+        const cssProps = () => { //zodat de css van de sidebar in parent element bestuurd kan worden
             return {
                 '--slide': props.slide
             }

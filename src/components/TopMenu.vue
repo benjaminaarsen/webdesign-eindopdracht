@@ -27,8 +27,6 @@
 
 <script>
 import { Icon } from '@iconify/vue';
-import {useRoute} from 'vue-router'
-import {ref} from 'vue'
 export default {
     name: "Menu",
     components: {
